@@ -1,0 +1,6 @@
+hotdir/*
+!hotdir/__HOTDIR__.md
+yarn-error.log
+!yarn.lock
+outputs
+scripts
