@@ -6,7 +6,7 @@
 
 
 <div align='center'>
-<a href="https://trendshift.io/repositories/2415" target="_blank"><img src="https://trendshift.io/api/badge/repositories/2415" alt="Mintplex-Labs%2Fzex-llm | Trendshift" style="width: 250px; height: 55px;" width="250" height="55"/></a>
+<a href="https://trendshift.io/repositories/2415" target="_blank"><img src="https://trendshift.io/api/badge/repositories/2415" alt="ZexAi-Labs%2Fzex-llm | Trendshift" style="width: 250px; height: 55px;" width="250" height="55"/></a>
 </div>
 <p align="center">
     <b>ZEXLLM:</b> The All-in-One AI Application You've Been Looking For<br />
@@ -83,7 +83,7 @@ ZEXLLM is an efficient, flexible, and powerful document and conversation managem
 
 **Audio Transcription models:**
 
-- [ZEXLLM Built-in](https://github.com/Mintplex-Labs/zex-llm/tree/master/server/storage/models#audiovideo-transcription) (default)
+- [ZEXLLM Built-in](https://github.com/ZexAi-Labs/zex-llm/tree/master/server/storage/models#audiovideo-transcription) (default)
 - [OpenAI](https://openai.com/)
 
 **TTS (text-to-speech) support:**
@@ -117,8 +117,8 @@ This monorepo consists of three main sections:
 - `server`: A NodeJS express server to handle all the interactions and do all the vectorDB management and LLM interactions.
 - `collector`: NodeJS express server that process and parses documents from the UI.
 - `docker`: Docker instructions and build process + information for building from source.
-- `embed`: Submodule for generation & creation of the [web embed widget](https://github.com/Mintplex-Labs/zexllm-embed).
-- `browser-extension`: Submodule for the [chrome browser extension](https://github.com/Mintplex-Labs/zexllm-extension).
+- `embed`: Submodule for generation & creation of the [web embed widget](https://github.com/ZexAi-Labs/zexllm-embed).
+- `browser-extension`: Submodule for the [chrome browser extension](https://github.com/ZexAi-Labs/zexllm-extension).
 
 
 
@@ -174,7 +174,7 @@ You can verify these claims by finding all locations `Telemetry.sendTelemetry` i
 
 ## 🌟 Contributors
 
-[![Star History Chart](https://api.star-history.com/svg?repos=ZexAi-labs/zex-llm&type=Timeline)](https://star-history.com/#mintplex-labs/zex-llm&Date)
+[![Star History Chart](https://api.star-history.com/svg?repos=ZexAi-labs/zex-llm&type=Timeline)](https://star-history.com/#ZexAi-labs/zex-llm&Date)
 
 ---
 
