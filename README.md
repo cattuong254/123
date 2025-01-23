@@ -176,10 +176,6 @@ You can verify these claims by finding all locations `Telemetry.sendTelemetry` i
 
 [![Star History Chart](https://api.star-history.com/svg?repos=mintplex-labs/zex-llm&type=Timeline)](https://star-history.com/#mintplex-labs/zex-llm&Date)
 
-<div align="right">
-[![][back-to-top]](#readme-top)
-</div>
-
 ---
 
 Copyright © 2025 [ZexAi Labs][profile-link]. <br />
