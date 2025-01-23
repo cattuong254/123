@@ -174,7 +174,7 @@ You can verify these claims by finding all locations `Telemetry.sendTelemetry` i
 
 ## 🌟 Contributors
 
-[![Star History Chart](https://api.star-history.com/svg?repos=mintplex-labs/zex-llm&type=Timeline)](https://star-history.com/#mintplex-labs/zex-llm&Date)
+[![Star History Chart](https://api.star-history.com/svg?repos=ZexAi-labs/zex-llm&type=Timeline)](https://star-history.com/#mintplex-labs/zex-llm&Date)
 
 ---
 
