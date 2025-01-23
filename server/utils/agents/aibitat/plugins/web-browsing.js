@@ -20,8 +20,8 @@ const webBrowsing = {
               call: JSON.stringify({ query: "Winner of today's world series" }),
             },
             {
-              prompt: "What is zexLLM?",
-              call: JSON.stringify({ query: "zexLLM" }),
+              prompt: "What is AnythingLLM?",
+              call: JSON.stringify({ query: "AnythingLLM" }),
             },
             {
               prompt: "Current AAPL stock price",
@@ -170,7 +170,7 @@ const webBrowsing = {
               headers: {
                 Authorization: `Bearer ${process.env.AGENT_SEARCHAPI_API_KEY}`,
                 "Content-Type": "application/json",
-                "X-SearchApi-Source": "zexLLM",
+                "X-SearchApi-Source": "AnythingLLM",
               },
             })
               .then((res) => res.json())
@@ -348,7 +348,7 @@ const webBrowsing = {
               headers: {
                 "X-API-KEY": process.env.AGENT_SERPLY_API_KEY,
                 "Content-Type": "application/json",
-                "User-Agent": "zex-llm",
+                "User-Agent": "anything-llm",
                 "X-Proxy-Location": proxy_location,
                 "X-User-Agent": device_type,
               },
@@ -418,7 +418,7 @@ const webBrowsing = {
               method: "GET",
               headers: {
                 "Content-Type": "application/json",
-                "User-Agent": "zex-llm",
+                "User-Agent": "anything-llm",
               },
             })
               .then((res) => res.json())

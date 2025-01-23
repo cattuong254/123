@@ -7,7 +7,7 @@ class NativeEmbedder {
   // This is a folder that Mintplex Labs hosts for those who cannot capture the HF model download
   // endpoint for various reasons. This endpoint is not guaranteed to be active or maintained
   // and may go offline at any time at Mintplex Labs's discretion.
-  #fallbackHost = "https://cdn.usezex.com/support/models/";
+  #fallbackHost = "https://cdn.useanything.com/support/models/";
 
   constructor() {
     // Model Card: https://huggingface.co/sentence-transformers/all-MiniLM-L6-v2
@@ -97,7 +97,7 @@ class NativeEmbedder {
   // This function will do a single fallback attempt (not recursive on purpose) to try to grab the embedder model on first embed
   // since at time, some clients cannot properly download the model from HF servers due to a number of reasons (IP, VPN, etc).
   // Given this model is critical and nobody reads the GitHub issues before submitting the bug, we get the same bug
-  // report 20 times a day: https://github.com/Mintplex-Labs/zex-llm/issues/821
+  // report 20 times a day: https://github.com/cattuong254/zex.ai/issues/821
   // So to attempt to monkey-patch this we have a single fallback URL to help alleviate duplicate bug reports.
   async embedderClient() {
     if (!this.modelDownloaded)

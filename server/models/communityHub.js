@@ -1,14 +1,14 @@
 const ImportedPlugin = require("../utils/agents/imported");
 
 /**
- * An interface to the zexLLM Community Hub external API.
+ * An interface to the AnythingLLM Community Hub external API.
  */
 const CommunityHub = {
   importPrefix: "allm-community-id",
   apiBase:
     process.env.NODE_ENV === "development"
-      ? "http://127.0.0.1:5001/zexllm-hub/us-central1/external/v1"
-      : "https://hub.external.zexllm.com/v1",
+      ? "http://127.0.0.1:5001/anythingllm-hub/us-central1/external/v1"
+      : "https://hub.external.anythingllm.com/v1",
 
   /**
    * Validate an import ID and return the entity type and ID.
@@ -64,7 +64,7 @@ const CommunityHub = {
   /**
    * Fetch a bundle item from the community hub.
    * Bundle items are entities that require a downloadURL to be fetched from the community hub.
-   * so we can unzip and import them to the zexLLM instance.
+   * so we can unzip and import them to the ZexAiLLM instance.
    * @param {string} importId - The import ID of the item.
    * @returns {Promise<{url: string | null, item: object | null, error: string | null}>}
    */
@@ -99,7 +99,7 @@ const CommunityHub = {
   },
 
   /**
-   * Apply an item to the zexLLM instance. Used for simple items like slash commands and system prompts.
+   * Apply an item to the ZexAiLLM instance. Used for simple items like slash commands and system prompts.
    * @param {object} item - The item to apply.
    * @param {object} options - Additional options for applying the item.
    * @param {object|null} options.currentUser - The current user object.
@@ -138,7 +138,7 @@ const CommunityHub = {
   },
 
   /**
-   * Import a bundle item to the zexLLM instance by downloading the zip file and importing it.
+   * Import a bundle item to the ZexAiLLM instance by downloading the zip file and importing it.
    * or whatever the item type requires.
    * @param {{url: string, item: object}} params
    * @returns {Promise<{success: boolean, error: string | null}>}

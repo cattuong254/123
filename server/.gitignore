@@ -1,7 +1,7 @@
 .env.production
 .env.development
 storage/assets/*
-!storage/assets/zex-llm.png
+!storage/assets/anything-llm.png
 storage/documents/*
 storage/comkey/*
 storage/tmp/*

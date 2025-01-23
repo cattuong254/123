@@ -17,8 +17,8 @@ class NovitaProvider extends InheritMultiple([Provider, UnTooled]) {
       apiKey: process.env.NOVITA_LLM_API_KEY,
       maxRetries: 3,
       defaultHeaders: {
-        "HTTP-Referer": "https://zexllm.com",
-        "X-Novita-Source": "zexllm",
+        "HTTP-Referer": "https://anythingllm.com",
+        "X-Novita-Source": "anythingllm",
       },
     });
 

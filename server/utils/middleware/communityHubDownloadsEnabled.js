@@ -23,7 +23,7 @@ function communityHubDownloadsEnabled(request, response, next) {
   if (!("COMMUNITY_HUB_BUNDLE_DOWNLOADS_ENABLED" in process.env)) {
     return response.status(422).json({
       error:
-        "Community Hub bundle downloads are not enabled. The system administrator must enable this feature manually to allow this instance to download these types of items. See https://docs.zexllm.com/configuration#zexllm-hub-agent-skills",
+        "Community Hub bundle downloads are not enabled. The system administrator must enable this feature manually to allow this instance to download these types of items. See https://docs.zexllm.com/configuration#anythingllm-hub-agent-skills",
     });
   }
 
@@ -37,7 +37,7 @@ function communityHubDownloadsEnabled(request, response, next) {
   ) {
     return response.status(422).json({
       error:
-        "Community hub bundle downloads are limited to verified public items or private team items only. Please contact the system administrator to review or modify this setting. See https://docs.zexllm.com/configuration#zexllm-hub-agent-skills",
+        "Community hub bundle downloads are limited to verified public items or private team items only. Please contact the system administrator to review or modify this setting. See https://docs.zexllm.com/configuration#anythingllm-hub-agent-skills",
     });
   }
   next();

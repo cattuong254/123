@@ -18,7 +18,7 @@ class LMStudioLLM {
       apiKey: null,
     });
 
-    // Prior to LMStudio 0.2.17 the `model` param was not required and you could pass zex
+    // Prior to LMStudio 0.2.17 the `model` param was not required and you could pass anything
     // into that field and it would work. On 0.2.17 LMStudio introduced multi-model chat
     // which now has a bug that reports the server model id as "Loaded from Chat UI"
     // and any other value will crash inferencing. So until this is patched we will
@@ -71,7 +71,7 @@ class LMStudioLLM {
   }
 
   async isValidChatCompletionModel(_ = "") {
-    // LMStudio may be zex. The user must do it correctly.
+    // LMStudio may be anything. The user must do it correctly.
     // See comment about this.model declaration in constructor
     return true;
   }
@@ -196,7 +196,7 @@ class LMStudioLLM {
 
 /**
  * Parse the base path for the LMStudio API. Since the base path must end in /v1 and cannot have a trailing slash,
- * and the user can possibly set it to zex and likely incorrectly due to pasting behaviors, we need to ensure it is in the correct format.
+ * and the user can possibly set it to anything and likely incorrectly due to pasting behaviors, we need to ensure it is in the correct format.
  * @param {string} basePath
  * @returns {string}
  */

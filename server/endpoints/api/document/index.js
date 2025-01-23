@@ -27,7 +27,7 @@ function apiDocumentEndpoints(app) {
     async (request, response) => {
       /*
     #swagger.tags = ['Documents']
-    #swagger.description = 'Upload a new file to zexLLM to be parsed and prepared for embedding.'
+    #swagger.description = 'Upload a new file to AnythingLLM to be parsed and prepared for embedding.'
     #swagger.requestBody = {
       description: 'File to be uploaded.',
       required: true,
@@ -56,14 +56,14 @@ function apiDocumentEndpoints(app) {
               error: null,
               documents: [
                 {
-                  "location": "custom-documents/zexllm.txt-6e8be64c-c162-4b43-9997-b068c0071e8b.json",
-                  "name": "zexllm.txt-6e8be64c-c162-4b43-9997-b068c0071e8b.json",
-                  "url": "file:///Users/tim/Documents/zex-llm/collector/hotdir/zexllm.txt",
-                  "title": "zexllm.txt",
+                  "location": "custom-documents/anythingllm.txt-6e8be64c-c162-4b43-9997-b068c0071e8b.json",
+                  "name": "anythingllm.txt-6e8be64c-c162-4b43-9997-b068c0071e8b.json",
+                  "url": "file:///Users/tim/Documents/anything-llm/collector/hotdir/anythingllm.txt",
+                  "title": "anythingllm.txt",
                   "docAuthor": "Unknown",
                   "description": "Unknown",
                   "docSource": "a text file uploaded by the user.",
-                  "chunkSource": "zexllm.txt",
+                  "chunkSource": "anythingllm.txt",
                   "published": "1/16/2024, 3:07:00 PM",
                   "wordCount": 93,
                   "token_count_estimate": 115,
@@ -127,7 +127,7 @@ function apiDocumentEndpoints(app) {
     async (request, response) => {
       /*
     #swagger.tags = ['Documents']
-    #swagger.description = 'Upload a valid URL for zexLLM to scrape and prepare for embedding.'
+    #swagger.description = 'Upload a valid URL for AnythingLLM to scrape and prepare for embedding.'
     #swagger.requestBody = {
       description: 'Link of web address to be scraped.',
       required: true,
@@ -136,7 +136,7 @@ function apiDocumentEndpoints(app) {
             schema: {
               type: 'object',
               example: {
-                "link": "https://zexllm.com"
+                "link": "https://anythingllm.com"
               }
             }
           }
@@ -153,17 +153,17 @@ function apiDocumentEndpoints(app) {
               documents: [
                 {
                   "id": "c530dbe6-bff1-4b9e-b87f-710d539d20bc",
-                  "url": "file://usezex_com.html",
-                  "title": "usezex_com.html",
+                  "url": "file://useanything_com.html",
+                  "title": "useanything_com.html",
                   "docAuthor": "no author found",
                   "description": "No description found.",
                   "docSource": "URL link uploaded by the user.",
-                  "chunkSource": "https:zexllm.com.html",
+                  "chunkSource": "https:anythingllm.com.html",
                   "published": "1/16/2024, 3:46:33 PM",
                   "wordCount": 252,
-                  "pageContent": "zexLLM is the best....",
+                  "pageContent": "AnythingLLM is the best....",
                   "token_count_estimate": 447,
-                  "location": "custom-documents/url-usezex_com-c530dbe6-bff1-4b9e-b87f-710d539d20bc.json"
+                  "location": "custom-documents/url-useanything_com-c530dbe6-bff1-4b9e-b87f-710d539d20bc.json"
                 }
               ]
             }
@@ -233,7 +233,7 @@ function apiDocumentEndpoints(app) {
           schema: {
             type: 'object',
             example: {
-              "textContent": "This is the raw text that will be saved as a document in zexLLM.",
+              "textContent": "This is the raw text that will be saved as a document in AnythingLLM.",
               "metadata": {
                 "title": "This key is required. See in /server/endpoints/api/document/index.js:287",
                 keyOne: "valueOne",
@@ -264,7 +264,7 @@ function apiDocumentEndpoints(app) {
                   "chunkSource": "no chunk source specified",
                   "published": "1/16/2024, 3:46:33 PM",
                   "wordCount": 252,
-                  "pageContent": "zexLLM is the best....",
+                  "pageContent": "AnythingLLM is the best....",
                   "token_count_estimate": 447,
                   "location": "custom-documents/raw-my-doc-text-c530dbe6-bff1-4b9e-b87f-710d539d20bc.json"
                 }
@@ -507,7 +507,7 @@ function apiDocumentEndpoints(app) {
   app.get("/v1/document/:docName", [validApiKey], async (request, response) => {
     /*
     #swagger.tags = ['Documents']
-    #swagger.description = 'Get a single document by its unique zexLLM document name'
+    #swagger.description = 'Get a single document by its unique AnythingLLM document name'
     #swagger.parameters['docName'] = {
         in: 'path',
         description: 'Unique document name to find (name in /documents)',

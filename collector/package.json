@@ -1,5 +1,5 @@
 {
-  "name": "zex-llm-document-collector",
+  "name": "anything-llm-document-collector",
   "version": "0.2.0",
   "description": "Document collector server endpoints",
   "main": "index.js",

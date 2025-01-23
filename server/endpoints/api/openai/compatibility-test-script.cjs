@@ -5,7 +5,7 @@ const OpenAI = require("openai");
  */
 const client = new OpenAI({
   baseURL: "http://localhost:3001/api/v1/openai",
-  apiKey: "ENTER_zexLLM_API_KEY_HERE",
+  apiKey: "ENTER_ANYTHINGLLM_API_KEY_HERE",
 });
 
 (async () => {
@@ -24,14 +24,14 @@ const client = new OpenAI({
         role: "system",
         content: "You are a helpful assistant who only speaks like a pirate.",
       },
-      { role: "user", content: "What is zexLLM?" },
+      { role: "user", content: "What is AnythingLLM?" },
       // {
       //   role: 'assistant',
-      //   content: "Arrr, matey! zexLLM be a fine tool fer sailin' the treacherous sea o' information with a powerful language model at yer helm. It's a potent instrument to handle all manner o' tasks involvin' text, like answerin' questions, generating prose, or even havin' a chat with digital scallywags like meself. Be there any specific treasure ye seek in the realm o' zexLLM?"
+      //   content: "Arrr, matey! AnythingLLM be a fine tool fer sailin' the treacherous sea o' information with a powerful language model at yer helm. It's a potent instrument to handle all manner o' tasks involvin' text, like answerin' questions, generating prose, or even havin' a chat with digital scallywags like meself. Be there any specific treasure ye seek in the realm o' AnythingLLM?"
       // },
       // { role: "user", content: "Why are you talking like a pirate?" },
     ],
-    model: "zexllm", // must be workspace-slug
+    model: "anythingllm", // must be workspace-slug
   });
   console.log(syncCompletion.choices[0]);
 
@@ -43,9 +43,9 @@ const client = new OpenAI({
         role: "system",
         content: "You are a helpful assistant who only speaks like a pirate.",
       },
-      { role: "user", content: "What is zexLLM?" },
+      { role: "user", content: "What is AnythingLLM?" },
     ],
-    model: "zexllm", // must be workspace-slug
+    model: "anythingllm", // must be workspace-slug
     stream: true,
   });
 

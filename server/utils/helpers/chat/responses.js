@@ -115,7 +115,7 @@ function handleDefaultStreamResponseV2(response, stream, responseProps) {
         error: e.message,
       });
       stream?.endMeasurement(usage);
-      resolve(fullText); // Return what we currently have - if zex.
+      resolve(fullText); // Return what we currently have - if anything.
     }
   });
 }

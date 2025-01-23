@@ -27,8 +27,8 @@ class OpenRouterLLM {
       baseURL: this.basePath,
       apiKey: process.env.OPENROUTER_API_KEY ?? null,
       defaultHeaders: {
-        "HTTP-Referer": "https://zexllm.com",
-        "X-Title": "zexLLM",
+        "HTTP-Referer": "https://anythingllm.com",
+        "X-Title": "AnythingLLM",
       },
     });
     this.model =

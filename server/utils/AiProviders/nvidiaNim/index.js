@@ -225,7 +225,7 @@ class NvidiaNimLLM {
 
 /**
  * Parse the base path for the Nvidia NIM container API. Since the base path must end in /v1 and cannot have a trailing slash,
- * and the user can possibly set it to zex and likely incorrectly due to pasting behaviors, we need to ensure it is in the correct format.
+ * and the user can possibly set it to anything and likely incorrectly due to pasting behaviors, we need to ensure it is in the correct format.
  * @param {string} basePath
  * @returns {string}
  */

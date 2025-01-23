@@ -95,6 +95,6 @@ async function runAIbitat(socket) {
     to: "<b>#branding</b>",
     content: `I have an idea for a muslim focused meetup called Chai & Vibes. 
     I want to focus on professionals that are muslim and are in their 18-30 year old range who live in big cities. 
-    Does zex like this exist? How can we differentiate?`,
+    Does anything like this exist? How can we differentiate?`,
   });
 }

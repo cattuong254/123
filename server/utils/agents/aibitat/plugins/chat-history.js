@@ -1,7 +1,7 @@
 const { WorkspaceChats } = require("../../../../models/workspaceChats");
 
 /**
- * Plugin to save chat history to zexLLM DB.
+ * Plugin to save chat history to AnythingLLM DB.
  */
 const chatHistory = {
   name: "chat-history",

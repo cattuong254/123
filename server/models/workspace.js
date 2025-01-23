@@ -183,7 +183,7 @@ const Workspace = {
       });
 
       // If created with a user then we need to create the relationship as well.
-      // If creating with an admin User it wont change zex because admins can
+      // If creating with an admin User it wont change anything because admins can
       // view all workspaces anyway.
       if (!!creatorId) await WorkspaceUser.create(creatorId, workspace.id);
       return { workspace, message: null };

@@ -26,7 +26,7 @@ async function resetAllVectorStores({ vectorDbKey }) {
     });
 
     console.log(
-      "Resetting zexllm managed vector namespaces for",
+      "Resetting anythingllm managed vector namespaces for",
       vectorDbKey
     );
     const VectorDb = getVectorDbClass(vectorDbKey);

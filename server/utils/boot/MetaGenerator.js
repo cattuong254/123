@@ -45,21 +45,21 @@ class MetaGenerator {
       {
         tag: "title",
         props: null,
-        content: "zexLLM | Your personal LLM trained on zex",
+        content: "AnythingLLM | Your personal LLM trained on anything",
       },
 
       {
         tag: "meta",
         props: {
           name: "title",
-          content: "zexLLM | Your personal LLM trained on zex",
+          content: "AnythingLLM | Your personal LLM trained on anything",
         },
       },
       {
         tag: "meta",
         props: {
           description: "title",
-          content: "zexLLM | Your personal LLM trained on zex",
+          content: "AnythingLLM | Your personal LLM trained on anything",
         },
       },
 
@@ -67,20 +67,20 @@ class MetaGenerator {
       { tag: "meta", props: { property: "og:type", content: "website" } },
       {
         tag: "meta",
-        props: { property: "og:url", content: "https://zexllm.com" },
+        props: { property: "og:url", content: "https://anythingllm.com" },
       },
       {
         tag: "meta",
         props: {
           property: "og:title",
-          content: "zexLLM | Your personal LLM trained on zex",
+          content: "AnythingLLM | Your personal LLM trained on anything",
         },
       },
       {
         tag: "meta",
         props: {
           property: "og:description",
-          content: "zexLLM | Your personal LLM trained on zex",
+          content: "AnythingLLM | Your personal LLM trained on anything",
         },
       },
       {
@@ -88,7 +88,7 @@ class MetaGenerator {
         props: {
           property: "og:image",
           content:
-            "https://raw.githubusercontent.com/Mintplex-Labs/zex-llm/master/images/promo.png",
+            "https://raw.githubusercontent.com/Mintplex-Labs/anything-llm/master/images/promo.png",
         },
       },
 
@@ -99,20 +99,20 @@ class MetaGenerator {
       },
       {
         tag: "meta",
-        props: { property: "twitter:url", content: "https://zexllm.com" },
+        props: { property: "twitter:url", content: "https://anythingllm.com" },
       },
       {
         tag: "meta",
         props: {
           property: "twitter:title",
-          content: "zexLLM | Your personal LLM trained on zex",
+          content: "AnythingLLM | Your personal LLM trained on anything",
         },
       },
       {
         tag: "meta",
         props: {
           property: "twitter:description",
-          content: "zexLLM | Your personal LLM trained on zex",
+          content: "AnythingLLM | Your personal LLM trained on anything",
         },
       },
       {
@@ -120,7 +120,7 @@ class MetaGenerator {
         props: {
           property: "twitter:image",
           content:
-            "https://raw.githubusercontent.com/Mintplex-Labs/zex-llm/master/images/promo.png",
+            "https://raw.githubusercontent.com/Mintplex-Labs/anything-llm/master/images/promo.png",
         },
       },
 
@@ -191,7 +191,7 @@ class MetaGenerator {
           props: null,
           content:
             customTitle ??
-            "zexLLM | Your personal LLM trained on zex",
+            "AnythingLLM | Your personal LLM trained on anything",
         },
       ];
     }

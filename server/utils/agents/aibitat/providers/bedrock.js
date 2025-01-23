@@ -38,7 +38,7 @@ class AWSBedrockProvider extends InheritMultiple([Provider, UnTooled]) {
 
   /**
    * Get the authentication method for the AWS Bedrock LLM.
-   * There are only two valid values for this setting - zex else will default to "iam".
+   * There are only two valid values for this setting - anything else will default to "iam".
    * @returns {"iam"|"sessionToken"}
    */
   get authMethod() {

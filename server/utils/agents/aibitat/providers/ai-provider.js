@@ -81,8 +81,8 @@ class Provider {
           configuration: {
             baseURL: "https://openrouter.ai/api/v1",
             defaultHeaders: {
-              "HTTP-Referer": "https://zexllm.com",
-              "X-Title": "zexLLM",
+              "HTTP-Referer": "https://anythingllm.com",
+              "X-Title": "AnythingLLM",
             },
           },
           apiKey: process.env.OPENROUTER_API_KEY ?? null,
@@ -165,7 +165,7 @@ class Provider {
         });
 
       // OSS Model Runners
-      // case "zexllm_ollama":
+      // case "anythingllm_ollama":
       //   return new ChatOllama({
       //     baseUrl: process.env.PLACEHOLDER,
       //     ...config,
